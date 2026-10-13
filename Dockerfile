@@ -30,4 +30,6 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 WORKDIR /workspace
 
-CMD ["bash"]
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+
+CMD ["bash", "/usr/local/bin/docker-entrypoint.sh"]

@@ -5,5 +5,6 @@ services:
     working_dir: /workspace
     volumes:
       - ./workspace:/workspace
+      - ./phases:/course/phases:ro
     stdin_open: true
     tty: true
