@@ -1,0 +1,9 @@
+services:
+  ai-dev:
+    build: .
+    container_name: ai-engineering
+    working_dir: /workspace
+    volumes:
+      - ./workspace:/workspace
+    stdin_open: true
+    tty: true
